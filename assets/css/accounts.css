@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary_color: #FF8A00;
+    --heading: #141414;
+    --text-color: #6C6C6C;
+    --bg_color: #fff;
+    --login_place: #797979;
+}
+
+.darks_mode {
+    --primary_color: rgb(223, 111, 14);
+    --heading: #FFFFFF !important;
+    --text-color: #797979;
+    --bg_color: #343434;
+}
+
+body {
+    background-color: var(--bg_color);
+}
+
+.my_container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.dflex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    align-items: center;
+}
+
+.select_country select {
+    font-family: 'Outfit';
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.darkflex {
+    display: flex;
+}
+
+.dark_mode {
+    margin-right: 29px;
+
+}
+
+.dark_mode:hover {
+    cursor: pointer;
+}
+
+.dark_mode i {
+    color: var(--text-color);
+}
+
+.login {
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.login_heading {
+    color: var(--heading);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: 'Outfit';
+    padding-bottom: 54px;
+    font-weight: 400;
+
+}
+
+input,
+.login_btn {
+    border: none;
+    outline: none;
+    width: 100%;
+    color: var(--login_place);
+    border: 1px solid #D1CECE;
+    border-radius: 8px;
+    max-width: 457px;
+    padding: 18px 0px 18px 23px;
+    margin-bottom: 34px;
+    font-family: 'Outfit';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: var(--bg_color);
+}
+
+input:focus {
+    border: 1px solid #FF8A00;
+    filter: drop-shadow(0px 0px 6px #F7931A);
+    border-radius: 8px;
+}
+
+.login_btn {
+    background-color: var(--primary_color);
+    color: var(--bg_color);
+    padding: 0px;
+    height: 51px;
+    border: none;
+}
+
+.no_account {
+    text-align: center;
+    color: var(--login_place);
+    max-width: 475px;
+}
+
+.no_account a {
+    text-decoration: none;
+    color: #141414;
+}
+
+.ftr_bg_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+
+}
+
+.login_img img,
+.ftr_bg_img img {
+    max-width: 100%;
+}
+
+.dlflex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.darks_mode .no_account {
+    color: white;
+    font-weight: 400;
+}
+.darks_mode .no_account a{
+    color: white;
+    font-weight: 600;
+}
+
+
+/* Media Quireies  */
+
+@media (max-width:1340px) {
+    .my_container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .dlflex {
+        display: block;
+    }
+
+    .login {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .login_img {
+        display: none;
+    }
+
+    .logo img {
+        max-width: 90%;
+    }
+
+    input,
+    .login_btn,
+    .no_account {
+        max-width: 100%;
+    }
+
+    .dark_mode {
+        margin-right: 15px;
+    }
+}

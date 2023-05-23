@@ -1,0 +1,19 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary_color:#FF8A00;
+    --text-color:#000;
+    --bg_color:#fff;
+}
+
+/* .dark_mode{
+    --primary_color:rgb(223, 111, 14);
+    --text-color:#fff;
+    --bg_color:#000;
+} */
+
